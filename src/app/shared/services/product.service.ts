@@ -67,31 +67,31 @@ export class ProductService {
         $key: "1", productId: 1, productName: "Shital Eskimo Platinum", productCategory: "Mink Blankets",
         productPrice: 1775,
         productDescription: "These Mink blankets are luxuriously soft and are cozy to the core. The subtle colour scheme give these ...",
-        productImageUrl: "http://handasons.in/Images/images/gallery/fabric%20008-l.jpg",
+        productImageUrl: "../../assets/images/Capture.PNG",
         productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
       },
       {
-        $key: "2", productId: 2, productName: "", productCategory: "Polar Blankets",
+        $key: "2", productId: 2, productName: "Polar Blankets", productCategory: "Polar Blankets",
         productPrice: 1, productDescription: "Our assortments of Polar Blankets are manufactured from superior quality raw material that makes the blankets soft, comfortable",
-        productImageUrl: "http://handasons.in/Images/images/gallery/elegant-blanket.jpg",
+        productImageUrl: "../../assets/images/polar.jpg",
         productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
       },
       {
-        $key: "3", productId: 3, productName: "", productCategory: "Flano Blankets",
+        $key: "3", productId: 3, productName: "Flano Blankets", productCategory: "Flano Blankets",
         productPrice: 1, productDescription: "Available in various patterns, colors and designs. The light weighted Flano Blankets provide extreme warmth and cozy feel ...",
-        productImageUrl: "http://handasons.in/Images/images/gallery/1357.jpg",
+        productImageUrl: "../../assets/images/Flano.jpg",
         productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
       },
       {
-        $key: "4", productId: 4, productName: "", productCategory: "Fleece Blankets",
+        $key: "4", productId: 4, productName: "Fleece Blankets", productCategory: "Fleece Blankets",
         productPrice: 1, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
-        productImageUrl: "http://handasons.in/Images/images/Sample.jpg",
+        productImageUrl: "../../assets/images/fleece.jpeg",
         productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
       },
       {
-        $key: "5", productId: 4, productName: "", productCategory: "Woolen Blankets",
+        $key: "5", productId: 4, productName: "Woolen Blankets", productCategory: "Woolen Blankets",
         productPrice: 1, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
-        productImageUrl: "http://handasons.in/Images/images/Sample.jpg",
+        productImageUrl: "../../assets/images/woolen.jpg",
         productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "productSeller1"
       }
     ];
