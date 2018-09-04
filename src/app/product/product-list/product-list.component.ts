@@ -12,7 +12,7 @@ import { LoaderSpinnerService } from "../../shared/loader-spinner/loader-spinner
 export class ProductListComponent implements OnInit {
   productList: Product[];
 
-  brands = ["All", "Mink Blanket", "Polar Blankets", "Flano Blankets", "Fleece Blankets", "WOOLEN BLANKETS"];
+  brands = ["All", "Mink Blankets", "Polar Blankets", "Flano Blankets", "Fleece Blankets", "Woolen Blankets"];
 
   selectedBrand: "All";
 
