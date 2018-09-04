@@ -64,35 +64,35 @@ export class ProductService {
   getAllProducts() {
     return [
       {
-        $key: "1", productId: 1, productName: "Shital Eskimo Platinum", productCategory: "Mink Blankets",
+        $key: "1", productId: 1, productName: "Mink Blankets", productCategory: "Mink Blankets",
         productPrice: 1775,
         productDescription: "These Mink blankets are luxuriously soft and are cozy to the core. The subtle colour scheme give these ...",
         productImageUrl: "../../assets/images/Capture.PNG",
-        productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
+        productAdded: 9, productQuatity: 1000, ratings: 1, favourite: true, productSeller: "Mink Blankets"
       },
       {
         $key: "2", productId: 2, productName: "Polar Blankets", productCategory: "Polar Blankets",
-        productPrice: 1, productDescription: "Our assortments of Polar Blankets are manufactured from superior quality raw material that makes the blankets soft, comfortable",
+        productPrice: 150, productDescription: "Our assortments of Polar Blankets are manufactured from superior quality raw material that makes the blankets soft, comfortable",
         productImageUrl: "../../assets/images/polar.jpg",
-        productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
+        productAdded: 2, productQuatity: 4000, ratings: 1, favourite: true, productSeller: "Polar Blankets"
       },
       {
         $key: "3", productId: 3, productName: "Flano Blankets", productCategory: "Flano Blankets",
-        productPrice: 1, productDescription: "Available in various patterns, colors and designs. The light weighted Flano Blankets provide extreme warmth and cozy feel ...",
+        productPrice: 280, productDescription: "Available in various patterns, colors and designs. The light weighted Flano Blankets provide extreme warmth and cozy feel ...",
         productImageUrl: "../../assets/images/Flano.jpg",
-        productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
+        productAdded: 2, productQuatity: 1500, ratings: 1, favourite: true, productSeller: "Flano Blankets"
       },
       {
         $key: "4", productId: 4, productName: "Fleece Blankets", productCategory: "Fleece Blankets",
-        productPrice: 1, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
+        productPrice: 250, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
         productImageUrl: "../../assets/images/fleece.jpeg",
-        productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "HandaSons"
+        productAdded: 2, productQuatity: 1500, ratings: 1, favourite: true, productSeller: "Fleece Blankets"
       },
       {
         $key: "5", productId: 4, productName: "Woolen Blankets", productCategory: "Woolen Blankets",
-        productPrice: 1, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
+        productPrice: 400, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
         productImageUrl: "../../assets/images/woolen.jpg",
-        productAdded: 2, productQuatity: 1, ratings: 1, favourite: true, productSeller: "productSeller1"
+        productAdded: 2, productQuatity: 2000, ratings: 1, favourite: true, productSeller: "Woolen Blankets"
       }
     ];
   }
