@@ -10,7 +10,7 @@ ul>li {
   position: relative;
   top: 1200px;
   flex-shrink: 0;
-  z-index: 99999;
+  z-index: 0;
 }
 
 /*[ FONT SIZE ]
