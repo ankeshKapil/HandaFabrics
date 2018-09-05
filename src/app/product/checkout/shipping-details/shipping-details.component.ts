@@ -31,14 +31,16 @@ export class ShippingDetailsComponent implements OnInit {
   ngOnInit() {}
 
   updateUserDetails(form: NgForm) {
-
+    debugger;
     const data = form.value;
     data["emailId"] = this.userDetails.emailId;
     data["userName"] = this.userDetails.userName;
     data["dfdf"]=this.productService.getLocalCartProducts();
     this.sendEmailAlert(data).subscribe();
-    console.log("Data: ", data);  
-    this.router.navigate(['/checkouts/(checkOutlet:Results)']);
+    console.log("Data: ", data); 
+    localStorage.removeItem("avct_item");
+    this.productService.navbarCartCount=0;
+    this.router.navigate(['/checkouts', {outlets: {'checkOutlet': ['result']}}]);
     
   }
 
