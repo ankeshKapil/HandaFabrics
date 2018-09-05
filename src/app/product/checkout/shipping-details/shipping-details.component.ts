@@ -6,6 +6,9 @@ import { AuthService } from "./../../../shared/services/auth.service";
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "../../../../../node_modules/@angular/forms";
 import * as firebase from "firebase/app";
+import { Router } from '@angular/router';
+import { HttpHeaders } from '@angular/common/http';
+
 
 
 @Component({
@@ -18,7 +21,7 @@ export class ShippingDetailsComponent implements OnInit {
    products:Product[];
   userDetail: UserDetail;
 
-  constructor(private authService: AuthService, private http: HttpClient ,private productService: ProductService) {
+  constructor(private authService: AuthService, private http: HttpClient ,private productService: ProductService,private router: Router) {
     debugger;
     const products = productService.getLocalCartProducts();
     this.userDetail = new UserDetail();
@@ -28,11 +31,25 @@ export class ShippingDetailsComponent implements OnInit {
   ngOnInit() {}
 
   updateUserDetails(form: NgForm) {
-  debugger
+
     const data = form.value;
     data["emailId"] = this.userDetails.emailId;
     data["userName"] = this.userDetails.userName;
     data["dfdf"]=this.productService.getLocalCartProducts();
-    console.log("Data: ", data);
+    this.sendEmailAlert(data).subscribe();
+    console.log("Data: ", data);  
+    this.router.navigate(['/checkouts/(checkOutlet:Results)']);
+    
   }
+
+  sendEmailAlert(data){
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json'
+            })
+    };
+   return this.http.post("/sendmailalert", JSON.stringify(data), httpOptions)
+   
+  }
+
 }
