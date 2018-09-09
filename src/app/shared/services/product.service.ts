@@ -90,9 +90,15 @@ export class ProductService {
       },
       {
         $key: "5", productId: 4, productName: "Woolen Blankets", productCategory: "Woolen Blankets",
-        productPrice: 400, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
+        productPrice: 400, productDescription: "Our Woolen Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
         productImageUrl: "../../assets/images/woolen.jpg",
         productAdded: 2, productQuatity: 2000, ratings: 1, favourite: true, productSeller: "Woolen Blankets"
+      },
+      {
+        $key: "6", productId: 4, productName: "Relief Blankets", productCategory: "Relief Blankets",
+        productPrice: 400, productDescription: "Our Relief Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality",
+        productImageUrl: "../../assets/images/relief.jpg",
+        productAdded: 2, productQuatity: 2000, ratings: 1, favourite: true, productSeller: "Relief Blankets"
       }
     ];
   }
