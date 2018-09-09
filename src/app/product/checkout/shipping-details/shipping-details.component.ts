@@ -8,6 +8,7 @@ import { NgForm } from "../../../../../node_modules/@angular/forms";
 import * as firebase from "firebase/app";
 import { Router } from '@angular/router';
 import { HttpHeaders } from '@angular/common/http';
+import { Order } from './order';
 
 
 
@@ -31,13 +32,25 @@ export class ShippingDetailsComponent implements OnInit {
   ngOnInit() {}
 
   updateUserDetails(form: NgForm) {
-    debugger;
-    const data = form.value;
-    data["emailId"] = this.userDetails.emailId;
-    data["userName"] = this.userDetails.userName;
-    data["dfdf"]=this.productService.getLocalCartProducts();
-    this.sendEmailAlert(data).subscribe();
-    console.log("Data: ", data); 
+    var order = new Order();
+    order.firstname=form.value.firstName;
+    order.lastname=form.value.lastName;
+    order.email=form.value.email;
+    order.phone=form.value.zip;
+    order.address = `${form.value.address1} ${form.value.address2} ${form.value.state} ${form.value.country}`
+
+    var items=this.productService.getLocalCartProducts();
+    var totalamount=0;
+ 
+    items.forEach(function(item:Product){
+      totalamount+=item.productPrice;
+      item.productImageUrl= item.productImageUrl.replace("../..",location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: ''));
+    });
+    order.items=items;
+    console.log(JSON.stringify(items));
+    order.totalamount=totalamount+"";
+    this.sendEmailAlert(order).subscribe();
+    console.log("Data: ", order); 
     localStorage.removeItem("avct_item");
     this.productService.navbarCartCount=0;
     this.router.navigate(['/checkouts', {outlets: {'checkOutlet': ['result']}}]);
