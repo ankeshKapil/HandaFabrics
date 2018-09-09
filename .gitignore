@@ -41,5 +41,5 @@ Thumbs.db
 
 #Personal Config
 /src/environments/firebaseConfigDummy.ts
-firebase.json"sendgrid.env" 
-"sendgrid.env" 
+firebase.json
+
