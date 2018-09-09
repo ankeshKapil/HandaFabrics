@@ -66,13 +66,13 @@ export class ProductService {
       {
         $key: "1", productId: 1, productName: "Mink Blankets", productCategory: "Mink Blankets",
         productPrice: 1775,
-        productDescription: "These Mink blankets are luxuriously soft and are cozy to the core. The subtle colour scheme give these ...",
+        productDescription: "These Eskimo platinum mink double blankets are luxuriously soft and are cozy to the core. The subtle colour scheme give these",
         productImageUrl: "../../assets/images/Capture.PNG",
         productAdded: 9, productQuatity: 1000, ratings: 1, favourite: true, productSeller: "Mink Blankets"
       },
       {
         $key: "2", productId: 2, productName: "Polar Blankets", productCategory: "Polar Blankets",
-        productPrice: 150, productDescription: "Our assortments of Polar Blankets are manufactured from superior quality raw material that makes the blankets soft, comfortable",
+        productPrice: 150, productDescription: "Our assortments of Polar double blankets are manufactured from superior quality raw material that makes the blankets soft, comfortable",
         productImageUrl: "../../assets/images/polar.jpg",
         productAdded: 2, productQuatity: 4000, ratings: 1, favourite: true, productSeller: "Polar Blankets"
       },
@@ -84,22 +84,30 @@ export class ProductService {
       },
       {
         $key: "4", productId: 4, productName: "Fleece Blankets", productCategory: "Fleece Blankets",
-        productPrice: 250, productDescription: "Our Fleece Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
+        productPrice: 250, productDescription: "Our Fleece double blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
         productImageUrl: "../../assets/images/fleece.jpeg",
         productAdded: 2, productQuatity: 1500, ratings: 1, favourite: true, productSeller: "Fleece Blankets"
       },
       {
         $key: "5", productId: 4, productName: "Woolen Blankets", productCategory: "Woolen Blankets",
-        productPrice: 400, productDescription: "Our Woolen Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
+        productPrice: 400, productDescription: "Our Woolen single blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality ...",
         productImageUrl: "../../assets/images/woolen.jpg",
         productAdded: 2, productQuatity: 2000, ratings: 1, favourite: true, productSeller: "Woolen Blankets"
       },
       {
         $key: "6", productId: 4, productName: "Relief Blankets", productCategory: "Relief Blankets",
-        productPrice: 215, productDescription: "Our Relief Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality",
+        productPrice: 215, productDescription: "Our Relief single blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality",
         productImageUrl: "../../assets/images/relief.jpg",
         productAdded: 2, productQuatity: 2000, ratings: 1, favourite: true, productSeller: "Relief Blankets"
+      },
+      {
+        $key: "7", productId: 4, productName: "Shital Mink Blankets", productCategory: "Mink Blankets",
+        productPrice: 680, productDescription: "Shital Pride Double Blanket - Floral, Multicolour",
+        productImageUrl: "../../assets/images/Shital.jpg",
+        productAdded: 2, productQuatity: 2000, ratings: 1, favourite: true, productSeller: "Mink Blankets"
       }
+
+
     ];
   }
   /*
