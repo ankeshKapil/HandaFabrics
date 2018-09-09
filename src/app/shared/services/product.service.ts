@@ -96,7 +96,7 @@ export class ProductService {
       },
       {
         $key: "6", productId: 4, productName: "Relief Blankets", productCategory: "Relief Blankets",
-        productPrice: 400, productDescription: "Our Relief Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality",
+        productPrice: 215, productDescription: "Our Relief Blankets are widely appreciated for their finish with smooth or velvety texture. Fabricated using high quality",
         productImageUrl: "../../assets/images/relief.jpg",
         productAdded: 2, productQuatity: 2000, ratings: 1, favourite: true, productSeller: "Relief Blankets"
       }
