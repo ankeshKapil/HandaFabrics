@@ -18,7 +18,7 @@ function sendMailAlert(req,res){
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey('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');
 const msg = {
-  to: 'ankesh.kapil@gmail.com;handafabrics@gmail.com',
+  to: ['ankesh.kapil@gmail.com','handafabrics@gmail.com'],
   from: 'ankeshkapil85@gmail.com',
   subject: 'New Order on Urban Fabrics',
   text: 'and easy to do anywhere, even with Node.js',
